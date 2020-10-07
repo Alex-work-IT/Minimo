@@ -1,4 +1,5 @@
 body {
+  padding-top: 50px;
   min-width: 320px;
   font-size: 14px;
   font-family: "Playfair Display", serif;
@@ -8,15 +9,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   color: #b4ad9e;
 }
+
 a:hover {
   color: #898377;
 }
+
 p {
   line-height: 1.5rem;
 }
+
 h2,
 h3 {
   margin: 1rem 0;
@@ -24,18 +29,26 @@ h3 {
 }
 
 /* Header ---------->*/
+.navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .navbar-light {
   background: #fff;
 }
+
 .navbar-brand {
   font-size: 30px;
   font-family: "Inconsolata", monospace;
   text-transform: uppercase;
 }
+
 .nav-item {
   text-transform: uppercase;
   margin-left: 50px;
 }
+
 .nav-item a::after {
   content: "";
   display: block;
@@ -45,12 +58,23 @@ h3 {
   transform: scale(0);
   transition: all 0.3s;
 }
+
 .nav-item a:hover::after {
   transform: scale(1);
 }
+
+.navbar-toggler {
+  padding: .25rem 0;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+}
+
 .slider {
   margin-bottom: 50px;
 }
+
 /* Single post ---------->*/
 .post-category,
 .link-more {
@@ -60,9 +84,11 @@ h3 {
   text-transform: uppercase;
   font-weight: 300;
 }
+
 .post-title {
   margin-bottom: 40px;
 }
+
 .post-title a {
   color: #626262;
 }
@@ -71,14 +97,17 @@ h3 {
 .grid-posts {
   margin-top: 100px;
 }
+
 .grid-posts .card {
   border: 0;
   margin-bottom: 100px;
 }
+
 .grid-posts .card-body {
   padding-left: 0;
   padding-right: 0;
 }
+
 .grid-posts .card-img-top {
   border-radius: 0;
 }
@@ -90,6 +119,7 @@ h3 {
   border-color: #626262;
   border-radius: 0;
 }
+
 .load-more span {
   display: none;
 }
@@ -99,27 +129,34 @@ h3 {
   background-color: #f0f0f0;
   padding: 70px 0;
 }
+
 .signup h3 {
   color: #333333;
 }
+
 .signup form {
   margin-top: 70px;
 }
+
 .signup .form-input {
   position: relative;
 }
+
 .signup .form-control {
   border: 0;
   border-bottom: 1px solid #000000;
   border-radius: 0;
   background-color: transparent;
 }
+
 .form-control:focus {
   box-shadow: none;
 }
+
 .btn:focus {
   box-shadow: none;
 }
+
 .form-input .btn {
   position: absolute;
   right: 0;
@@ -133,29 +170,33 @@ footer {
   padding: 30px 0;
   color: #000000;
 }
+
 .footer-left a {
   color: #000;
   margin-right: 20px;
 }
+
 .footer-right a {
   color: #626262;
   margin-left: 20px;
 }
+
 .footer-right a:hover {
   color: #000;
 }
+
 a:not([href]):not([class]) {
   display: none;
 }
 
 /* <!-- Media--------> */
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 992px) {
   .nav-item {
     margin-left: 0;
   }
+
   footer {
     padding: 30px 0 20px 0;
   }
@@ -165,12 +206,15 @@ a:not([href]):not([class]) {
   .signup {
     padding: 40px 0;
   }
+
   .grid-posts .card {
     margin-bottom: 30px;
   }
+
   .post-title {
     margin-bottom: 20px;
   }
+
   .load-more {
     margin-bottom: 30px;
     padding: 10px 25px;
@@ -178,13 +222,20 @@ a:not([href]):not([class]) {
 }
 
 @media (max-width: 576px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .slider {
     margin-bottom: 20px;
   }
+
   footer {
     text-align: center;
     padding: 10px 0 10px 0;
   }
+
   .footer-left {
     margin-bottom: 5px;
   }
